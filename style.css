@@ -1,304 +1,149 @@
-/*<----------- General ------------>*/
-*{
-    padding: 0;
+:root {
+    --main-blue: #212F3D;
+    --secondary-blue: #0a4d8f;
+    --main-green: #3bdd92;
+    --secondary-green: #18a865;
+    --success-color: #ada427;
+    --error-color: #ce2323;
+    --active-link: #810b8b;
+    --border-radius: 8px;
+}
+
+
+/* Login Page Styling */
+
+#LoginBody {
+    background-color: var(--main-blue);
+    align-items: center;
+    justify-content: center;
+    display: flex;
     margin: 0;
-    background-color: #212F3D;
-    color: white;
-    box-sizing: border-box;
-    font-family: 'Raleway', sans-serif;
-}
-html{
-    background-color: #212F3D;
-}
-footer{
-    display: block;
-    text-align: center;
-    padding: 20px;
-    background-color: #313859;
-}
-footer span{
-    background-color: #313859;
-}
-/*<----------- Navigation Bar ------------>*/
-.nav-bar ul{
-    list-style: none;  
-}
-.nav-bar ul li{
-    float: left;
-    display: block;
-    width: 150px;
-    height: 40px;
-    align-items: center;
-    font-family: 'Raleway', sans-serif;
-    background-color: #3bdd92;
-    font-size: 20px;
-    line-height: 60px;
-    text-align: center;
-}
-#right-bar{
-    float: right;
-}
-.nav-bar ul li a{
-    color: #212F3D;
-    text-decoration: none;
-}
-.nav-bar ul li a:hover{
-    text-decoration: underline;
-}
-.nav-bar-background{
-    background-color: #3bdd92;
-    width: 100%;
-    height: 70px;
-}
-/*<----------- Recent News ------------>*/
-.news-subtext{
-    width: 530px;
-    height: 100px;
-    font-family: 'Raleway', sans-serif;
+    height: 100vh;
     font-size: 18px;
-    color: #3bdd92;
-    background-color: #313859;
-    padding: 5px;
-    align-content: center;
-    box-shadow: 0 1px 3px rgb(0 0 0 / 25%);
-    font-weight: bold;
 }
-h1{
+
+#PageLogin {
+    background-color: var(--main-green);
+    width: 400px;
+    max-width: 400px;
+    margin: 1rem;
+    padding: 2rem;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    border-radius: var(--border-radius);
+}
+
+#PageLogin,
+.Form_Input_Group,
+.Form_Button {
     font-family: 'Raleway', sans-serif;
-    color: #3bdd92;
 }
-.news-section{
-    padding: 10px 0;
-}
-.news-date{
-    font-family: 'Raleway', sans-serif;
-    font-size: 16px;
-    color: #3bdd92;
-    display: inline-block;
-    background-color: #313859;
-    position: relative;
-    top: -25px;
-    right: -435px;
-}
-.news-more{
+
+.Form_Title {
+    margin-bottom: 1rem;
     text-align: center;
-    position: relative;
-    top: -25px;
 }
-.news-more a{
-    position: relative; 
-    top: 25px; 
-    font-size: 25px; 
-    color: #3bdd92; 
+
+.Form_Hidden{
+    display: none;
+}
+
+.first {
+    margin-top: 0;
+}
+
+.last {
+    margin-bottom: 0;
+}
+
+
+.Form_Message {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.Form_Message_Error {
+    color:var(--error-color);
+    font-weight: 500;
+}
+
+.Form_Message_Success {
+    color: var(--success-color);
+    font-weight: 500;
+}
+
+.Form_Input_Group {
+    margin-bottom: 1rem;
+}
+
+.Form_Input {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    box-sizing: border-box;
+    border-radius: var(--border-radius);
+    border: 2px solid #ffffff;
+    outline: none;
+    background: #ebebeb;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.Form_Input:focus {
+    border-color: var(--secondary-blue);
+    background-color: #ffffff;
+}
+
+.Input_Error {
+    color: var(--error-color);
+    border-color: var(--error-color);
+}
+
+.Input_Success {
+    color: var(--success-color);
+    border-color: var(--success-color);
+}
+
+.Input_Error_Message {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--error-color);
+}
+
+.Form_Button {
+    width: 100%;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #ffffff;
+    border: none;
+    border-radius: var(--border-radius);
+    outline: none;
+    cursor: pointer;
+    background: var(--secondary-blue);
+}
+
+.Form_Button:hover {
+    background: var(--main-blue);
+}
+
+.Form_Button:active {
+    transform: scale(0.98);
+}
+
+.Form_Text {
+    text-align: center;
+}
+
+.Form_Link {
+    color: var(--secondary-blue);
     text-decoration: none;
+    cursor: pointer;
 }
-.news-more a:hover{
-    position: relative; 
-    top: 25px; 
-    font-size: 25px; 
-    color: #3bdd92;
+
+.Form_Link:hover {
     text-decoration: underline;
 }
-/*<----------- Top Ranking Charts ------------>*/
-.top-ranking-section{
-    display: flex;
-    padding: 10px 5px;
-    background-color: #313859;
-}
-.top-ranking-subtext{
-    width: 360px;
-    font-family: 'Raleway', sans-serif;
-    font-size: 16px;
-    color: #3bdd92;
-    padding: 0 5px;
-    background-color: #313859;
-}
-.top-ranking-webpage-colour{
-    background-color: #313859;
-    padding: 10px;
-    box-shadow: 0 1px 3px rgb(0 0 0 / 25%);
-}
-.top-ranking-subtext > p{
-    background-color: #313859;
-}
-/*<----------- flex container ------------>*/
-.flex-container{
-    display: flex;
-    justify-content: center;
-    background-color: #151D26;
-    box-shadow: 1px 3px rgb(0 0 0 / 25%);
-}
-.flex-box{
-    padding: 0 25px;
-}
-/*<----------- Web Forums ------------>*/
-.subforum a{
-    color: #3bdd92;
-    text-decoration: none;
-    font-family: 'Raleway', sans-serif;
-    background-color: #313859;
-}
-.subforum p{
-    color: white;
-    font-family: 'Raleway', sans-serif;
-    background-color: #313859;
-}
-.container{
-    margin: 20px;
-    padding: 20px;
-    margin-left: 200px;
-    margin-right: 200px;
-}
-.subforum-row{
-    display: grid;
-    grid-template-columns: 7% 60% 13% 20%;
-}
-.subforum-column{
-    padding: 20px;
-    margin: 2px;
-    border-radius: 5px;
-    background-color: #313859;
-}
-.center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-/*<----------- Web Forum Pages ------------>*/
-.table-head{
-    display: flex;
-}
-.table-head div{
-    padding: 5px;
-    margin: 2px;
-    background-color: #313859;
-    font: bold;
-}
-.table-head .status{
-    flex: 5%;
-}
-.table-head .subjects{
-    flex: 70%;
-}
-.table-head .replies{
-    flex: 10%;
-}
-.table-head .last-reply{
-    flex: 15%;
-}
-.table-row{
-    display: flex;
-}
-.table-row .status, .table-row .subjects, .table-row .replies, .table-row .last-reply{
-    padding: 10px;
-    margin: 2px;
-    background-color: #313859;
-}
-.table-row .status{
-    flex: 5%;
-    text-align: center;
-}
-.table-row .subjects{
-    flex: 70%;
-}
-.table-row .replies{
-    flex: 10%;
-}
-.table-row .last-reply{
-    flex: 15%;
-}
-.posts-table a{
-    color: #3bdd92;
-    text-decoration: none;
-    font-family: 'Raleway', sans-serif;
-    background-color: #313859;
-}
-.posts-table p{
-    color: white;
-    font-family: 'Raleway', sans-serif;
-    background-color: #313859;
-}
-.pagination{
-    padding: 20px;
-    font-size: 15px;
-    margin-left: 200px;
-}
-.pagination a{
-    color: #3bdd92;
-    margin-inline: 5px;
-    padding: 5px 10px;
-    border: solid 0.5px #3bdd92;
-    text-decoration: none;
-}
-.pagination a:hover{
-    opacity: 0.5;
-}
-/*<----------- Web Forum Comment Page ------------>*/
-.head{
-    display: flex;
-    background-color: #313859;
-    padding: 5px;
-    font-weight: bold;
-    font-size: 16px;
-}
-.authors{
-    flex: 20%;
-    background-color: #313859;
-}
-.content{
-    flex: 80%;
-    background-color: #313859;
-    font-style: italic;
-    line-height: 1.6;
-}
-.body{
-    display: flex;
-    background-color: #313859;
-    padding: 10px;
-    margin-top: 5px;
-}
-.body .authors .username a{
-    font-size: 20px;
-    font-weight: bold;
-    text-decoration: none;
-    background-color: #313859;
-    color: #3bdd92;
-}
-.body .authors img{
-    max-width: 80px;
-    max-height: 130px;
-    background-color: #313859;
-}
-.body div{
-    background-color: #313859;
-}
-.body .content .comment button{
-    border: none;
-    padding: 10px;
-    background-color: #8b97d4;
-    font-weight: bold;
-    color: #151D26;
-    float: right;
-}
-.body .content .comment button:hover{
-    opacity: 50%;
-}
-.comment-area{
-    margin-top: 50px;
-}
-.comment-area textarea{
-    width: 100%;
-    min-height: 100px;
-    padding: 10px;
-    margin-block: 10px;
-    background-color: white;
-    color: #151D26;
-}
-.comment-area input{
-    float: right;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: #8b97d4;
-    color: #151D26;
-    font-weight: bold;
+
+.Form_Link:active {
+    color: var(--active-link);
 }

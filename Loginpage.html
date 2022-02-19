@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>IP ASG Site</title>
+      <!-- Styling -->
+      <link rel="stylesheet" href="normalize.css">
+      <link rel="stylesheet" href="style.css">
+
+      <!-- Font -->
+      <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+  </head>
+
+  <body id = "LoginBody">
+
+      <!--Login Page Code-->
+      <div id = "PageLogin">
+          <form class = "Form" id = "Login">
+              <h1 class = "Form_Title first">Login</h1>
+              <div class="Form_Message"></div>
+              
+              <div class = "Form_Input_Group">
+                  <input type = "text" class = "Form_Input" id = "loginUsername" autofocus placeholder = "Username or Email">
+                  <div class = "Input_Error_Message"></div>
+                </div>
+                
+                <div class = "Form_Input_Group">
+                    <input type = "password" class = "Form_Input" id = "loginPassword" autofocus placeholder = "Password">
+                    <div class = "Input_Error_Message"></div>
+                </div>
+                
+                <button class = "Form_Button" id = "loginButton" type = "submit">Continue</button>
+                
+                <p class = "Form_Text">
+                    <a href = "#" class = "Form_Link">Forgot your password?</a>
+                </p>
+                
+                <p class = "Form_Text last">
+                    <a href = "#" class = "Form_Link" id = "createAccountLink">Don't have an account? Create one!</a>
+                </p>
+            </form>
+
+            <form class = "Form Form_Hidden" id = "CreateAccount">
+                <h1 class = "Form_Title first">Create Account</h1>
+                <div class="Form_Message"></div>
+                
+                <div class = "Form_Input_Group">
+                    <input type = "text" class = "Form_Input" id = "SignUpUsername" autofocus placeholder = "Username">
+                    <div class = "Input_Error_Message"></div>
+                </div>
+                  
+                <div class = "Form_Input_Group">
+                    <input type = "email" class = "Form_Input" id = "SignUpEmail" autofocus placeholder = "Email Addess">
+                    <div class = "Input_Error_Message"></div>
+                </div>
+
+                <div class = "Form_Input_Group">
+                    <input type = "password" class = "Form_Input" id = "SignUpPassword" autofocus placeholder = "Password">
+                    <div class = "Input_Error_Message"></div>
+                </div>
+
+                <div class = "Form_Input_Group">
+                    <input type = "password" class = "Form_Input" id = "ConfirmSignUpPassword" autofocus placeholder = "Confirm Password">
+                    <div class = "Input_Error_Message"></div>
+                </div>
+                
+                <button class = "Form_Button" id = "signUpButton" type = "submit">Continue</button>
+                                    
+                <p class = "Form_Text last">
+                    <a href = "#" class = "Form_Link" id = "loginLink">Already have an account? Sign in!</a>
+                </p>
+  
+            </form>
+  
+        </div>
+
+    </body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="Loginpage.js"></script>
