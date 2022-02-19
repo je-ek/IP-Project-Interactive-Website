@@ -149,6 +149,13 @@ $(document).ready(function () {
             };
 
             setMessageLogin(loginDetailsCheck,);
+
+            if (loginDetailsCheck === "Success"){
+                function redirect(){
+                    window.location.assign("Homepage.html");
+                }
+                setTimeout(redirect, 1000);
+            }else{}
            
         });
         
