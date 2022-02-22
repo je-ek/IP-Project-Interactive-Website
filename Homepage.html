@@ -9,8 +9,7 @@
       <link rel="stylesheet" href="style.css">
 
       <!-- Font -->
-      <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
-
+      <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&family=Roboto&display=swap" rel="stylesheet">
       <!-- Icons -->
       <script src="https://kit.fontawesome.com/453d284cb5.js" crossorigin="anonymous"></script>
   </head>
@@ -21,20 +20,110 @@
               <div class = "logoContainer">
                   <button class = "homeLogo">MANI</button>
               </div>
-              <nav>
-                  <ul class = "nav_links">
-                      <li ><i class="fa-solid fa-magnifying-glass"></i></li>
-                      <li><i class="fa-solid fa-bag-shopping"></i></li>
-                  </ul>
-              </nav>
-              <button class = "sign-out" id = "signOut" type = "submit">Sign Out</button>
+              <div class = headerMiddle>
+                  <div class = "navMiddle">
+                      <form class = "searchbar">
+                          <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+                          <input class = "searchInput" type = "text" placeholder= "Search anything anime/manga related">
+                      </form>
+                  </div>
+              </div>
+              <div class = "headerRight">
+                  <div class = "nav">
+                      <a class = "shopbtn">
+                          <i class="fa-solid fa-bag-shopping fa-2x"></i>
+                      </a>
+                      <a class = "forumbtn">
+                          <i class="fa-solid fa-comment fa-2x"></i>
+                      </a>
+                      <a class = "profilebtn">
+                          <i class="fa-solid fa-user fa-2x"></i>
+                      </a>
+                      <a class = "sign-out">
+                          <i class="fa-solid fa-right-from-bracket fa-2x"></i>
+                      </a>
+                  </div>
+                  <div class = "menu cta">
+                      <a class = "menubtn">
+                          <i class="fa-solid fa-bars fa-2x"></i>
+                      </a>
+                  </div>
+                  <div class="overlay">
+                      <a class="close">
+                          <i class="fa-solid fa-x"></i>
+                      </a>
+                      <div class="overlay__content">
+                          <a class = "shopbtn">
+                              <i class="fa-solid fa-bag-shopping"></i>
+                              <div class = "menuText">Shop</div>
+                          </a>
+                          <a class = "forumbtn">
+                              <i class="fa-solid fa-comment"></i>
+                              <div class = "menuText">Forum</div>
+                          </a>
+                          <a class = "profilebtn">
+                              <i class="fa-solid fa-user"></i>
+                              <div class = "menuText">Profile</div>
+                          </a>
+                          <a class = "sign-out">
+                              <i class="fa-solid fa-right-from-bracket"></i>
+                              <div class = "menuText">Sign Out</div>
+                          </a>
+                      </div>
+                      <div class = "MC">
+                          <div class="menuSocial">
+                              <div class = "menuMsg">Follow us at our socials!</div>
+                              <div class = "menuIcon">
+                                  <a  href="https://twitter.com/home" target="_blank"><div class = "menuSI"><i class="fa-brands fa-twitter"></i></div></a>
+                                  <a  href="https://www.facebook.com/" target="_blank"><div class = "menuSI"><i class="fa-brands fa-facebook-f"></i></div></a>
+                                  <a  href="https://www.instagram.com/" target="_blank"><div class = "menuSI"><i class="fa-brands fa-instagram"></i></div></a>
+                              </div>
+                          </div>
+                          <div class="menuCredits">
+                              <div class="menuCM">Made by Wei Xuan & Haizal</div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
           </header>
 
           <main class = "scrollableContainer">
               <div class = "overflowContainer">
-                  <div class="newsContainer">news</div>
-                  <div class="contentContainer">carousell</div>
-                  <div class="empty">empty</div>
+                  <div class="newsContainer">
+                      <div class = "openNews">News</div>
+                      <div class = "newTab">
+                          
+                      </div>
+                  </div>
+                  <div class="contentContainer">
+                      <div class = "content1">
+                          <div class = "carouselTitle">Popular Anime</div>
+                          <div class = "anime__carousel carousel">
+                              <div class = "carouselTop">
+                                  <button class = "carousel__button  carousel__button--left"><i class="fa-solid fa-caret-left fa-2x"></i></button>
+                                  <div class = "carousel__track-container">
+                                      <ul class = "carousel__track">
+                                          <li class="carousel__slide"><a href="#"><img class="carousel__image" src="Anime Carousell/AOT Anime.jpg" alt=""></a></li>
+                                          <li class="carousel__slide"><a href="#"><img class="carousel__image" src="Anime Carousell/AOT Anime.jpg" alt=""></a></li>
+                                          <li class="carousel__slide"><a href="#"><img class="carousel__image" src="Anime Carousell/AOT Anime.jpg" alt=""></a></li>
+                                      </ul>
+                                  </div>
+                                  <button class = "carousel__button carousel__button--right"><i class="fa-solid fa-caret-right fa-2x"></i></button>
+                              </div>
+                              <div class = "carouselBottom">
+                                  <div class = "carousel__nav">
+                                      <button class = "carousel__indicator current-slide"></button>
+                                      <button class = "carousel__indicator"></button>
+                                      <button class = "carousel__indicator"></button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class = "content2">
+                          <div class = "carouselTitle">Popular Manga</div>
+                      </div>
+                  </div>
+                  <div class="empty"></div>
               </div>
           </main>
 
@@ -42,9 +131,9 @@
               <div class="socialContainer">
                   <div class = "socialMsg">Follow us at our socials!</div>
                   <div class = "iconBox">
-                      <div class = "socialIcons"><i class="fa-brands fa-twitter"></i></div>
-                      <div class = "socialIcons"><i class="fa-brands fa-facebook-f"></i></div>
-                      <div class = "socialIcons"><i class="fa-brands fa-instagram"></i></div>
+                      <a  href="https://twitter.com/home" target="_blank"><div class = "socialIcons"><i class="fa-brands fa-twitter"></i></div></a>
+                      <a  href="https://www.facebook.com/" target="_blank"><div class = "socialIcons"><i class="fa-brands fa-facebook-f"></i></div></a>
+                      <a  href="https://www.instagram.com/" target="_blank"><div class = "socialIcons"><i class="fa-brands fa-instagram"></i></div></a>
                   </div>
               </div>
               <div class="credits">
