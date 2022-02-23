@@ -38,7 +38,7 @@
     font-family: 'Raleway', sans-serif;
 }
 
-.Form_Title {
+.Form_Title{
     margin-bottom: 1rem;
     text-align: center;
 }
@@ -296,10 +296,28 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.overlay__content a:hover{
+    background-color: #ffffff;
+    border-color: var(--secondary-blue);
+    color: var(--main-blue);
+}
+
+.nav a:hover{
+    background-color: #ffffff;
+    color: var(--main-blue);
+}
+
+.nav a:active,
+.overlay a:active{
+    color: var(--error-color);
 }
 
 .menu i{
-    color: var(--main-green)
+    color: var(--main-green);
 }
 
 
@@ -366,13 +384,6 @@ header {
 
 .overlay__content a .menuText{
     width:70%;
-}
-
-.overlay__content a:hover,
-.overlay__content a:focus {
-    background-color: #ffffff;
-    border-color: var(--secondary-blue);
-    color: var(--main-blue);
 }
 
 .MC{
@@ -460,7 +471,7 @@ main{
     background-color: var(--main-blue);
     overflow-y: scroll;
     overflow-x: hidden;
-    height: 71vh;
+    height: 74vh;
 }
 
 .overflowContainer{
@@ -474,7 +485,6 @@ main{
 .newsContainer{
     width: 20%;
     height:100%;
-    background-color: red;
 }
 
 .contentContainer{
@@ -517,7 +527,7 @@ main{
 
 .carouselTop{
     height: 375px;
-    width: 295px;
+    width: 350px;
     border: 5px solid var(--main-green);
     border-radius: var(--border-radius);
     padding: 10px 0;
@@ -536,7 +546,7 @@ main{
 
 .CCC{
     height:350px;
-    width:190px;
+    width:250px;
     position: relative;
     margin: 0 auto;
 }
@@ -609,7 +619,6 @@ main{
 .empty{
     width:20%;
     height:100%;
-    background-color: orange;
 }
 
 
@@ -621,12 +630,86 @@ main{
     flex-direction: column;
 }
 
-.homeRedirect{
-    cursor:pointer;
-    outline:none;
-    border:none;
-    height: 100%;
-    width:20%;
+.ShopoverflowContainer{
+    height:1210px;
+    color: var(--main-green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Display{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.shopcontent1{
+    height: 40%;
+    box-sizing: border-box;
+    padding:10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.shopcontent2{
+    height: 60%;
+    box-sizing: border-box;
+    padding:10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Rengoku,
+.Tanjiro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    width:100%;
+}
+
+.shopTop{
+    height: 425px;
+    width: 355px;
+    border: 5px solid var(--main-green);
+    border-radius: var(--border-radius);
+    padding: 10px 0;
+    display:flex;
+    align-items: center;
+    justify-items:center;
+    box-sizing: border-box;
+}
+
+.shopBtm{
+    height: 10%;
+    display:flex;
+    align-items: center;
+    justify-items:center;
+}
+
+.shopCCC{
+    height:400px;
+    width:250px;
+    position: relative;
+    margin: 0 auto;
+}
+
+
+#Forumpage,
+#Postpage,
+#Profilepage {
+    background-color: var(--main-blue);
+    margin: 0;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
 }
 
 
@@ -713,12 +796,324 @@ footer{
 }
 
 
+/* Haizal's CSS */
+/*<----------- Recent News ------------>*/
+.news-subtext{
+    width: 530px;
+    height: 100px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    color: #3bdd92;
+    background-color: #313859;
+    padding: 5px;
+    align-content: center;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 25%);
+    font-weight: bold;
+}
+.news-section{
+    padding: 10px 0;
+}
+.news-date{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color: #3bdd92;
+    display: inline-block;
+    background-color: #313859;
+    position: relative;
+    top: -25px;
+    right: -435px;
+}
+.news-more{
+    text-align: center;
+    position: relative;
+    top: -25px;
+}
+.news-more a{
+    position: relative; 
+    top: 25px; 
+    font-size: 25px; 
+    color: #3bdd92; 
+    text-decoration: none;
+}
+.news-more a:hover{
+    position: relative; 
+    top: 25px; 
+    font-size: 25px; 
+    color: #3bdd92;
+    text-decoration: underline;
+}
+/*<----------- Top Ranking Charts ------------>*/
+.top-ranking-section{
+    display: flex;
+    padding: 10px 5px;
+    background-color: #313859;
+}
+.top-ranking-subtext{
+    width: 360px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color: #3bdd92;
+    padding: 0 5px;
+    background-color: #313859;
+}
+.top-ranking-webpage-colour{
+    background-color: #313859;
+    padding: 10px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 25%);
+}
+.top-ranking-subtext > p{
+    background-color: #313859;
+}
+/*<----------- flex container ------------>*/
+.flex-container{
+    display: flex;
+    justify-content: center;
+    background-color: #151D26;
+    box-shadow: 1px 3px rgb(0 0 0 / 25%);
+}
+.flex-box{
+    padding: 0 25px;
+}
+/*<----------- Web Forums ------------>*/
+.subforum a{
+    color: #3bdd92;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    background-color: #313859;
+}
+.subforum p{
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    background-color: #313859;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-left: 220px;
+    margin-right: 220px;
+}
+.subforum-row{
+    display: grid;
+    grid-template-columns: 7% 60% 13% 20%;
+}
+.subforum-column{
+    padding: 20px;
+    margin: 2px;
+    border-radius: 5px;
+    background-color: #313859;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*<----------- Web Forum Pages ------------>*/
+.table-head{
+    display: flex;
+}
+.table-head div{
+    padding: 5px;
+    margin: 2px;
+    background-color: #313859;
+    font: bold;
+}
+.table-head .status{
+    flex: 5%;
+}
+.table-head .subjects{
+    flex: 70%;
+}
+.table-head .replies{
+    flex: 10%;
+}
+.table-head .last-reply{
+    flex: 15%;
+}
+.table-row{
+    display: flex;
+}
+.table-row .status, .table-row .subjects, .table-row .replies, .table-row .last-reply{
+    padding: 10px;
+    margin: 2px;
+    background-color: #313859;
+}
+.table-row .status{
+    flex: 5%;
+    text-align: center;
+}
+.table-row .subjects{
+    flex: 70%;
+}
+.table-row .replies{
+    flex: 10%;
+}
+.table-row .last-reply{
+    flex: 15%;
+}
+.posts-table a{
+    color: #3bdd92;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    background-color: #313859;
+}
+.posts-table p{
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    background-color: #313859;
+}
+.pagination{
+    padding: 20px;
+    font-size: 15px;
+    margin-left: 200px;
+}
+.pagination a{
+    color: #3bdd92;
+    margin-inline: 5px;
+    padding: 5px 10px;
+    border: solid 0.5px #3bdd92;
+    text-decoration: none;
+}
+.pagination a:hover{
+    opacity: 0.5;
+}
+/*<----------- Web Forum Comment Page ------------>*/
+.head{
+    display: flex;
+    background-color: #313859;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 16px;
+}
+.authors{
+    flex: 20%;
+    background-color: #313859;
+}
+.content{
+    flex: 80%;
+    background-color: #313859;
+    font-style: italic;
+    line-height: 1.6;
+}
+.body{
+    display: flex;
+    background-color: #313859;
+    padding: 10px;
+    margin-top: 5px;
+}
+.body .authors .username a{
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #313859;
+    color: #3bdd92;
+}
+.body .authors img{
+    max-width: 80px;
+    max-height: 130px;
+    background-color: #313859;
+}
+.body div{
+    background-color: #313859;
+}
+.body .content .comment button{
+    border: none;
+    padding: 10px;
+    background-color: #8b97d4;
+    font-weight: bold;
+    color: #151D26;
+    float: right;
+}
+.body .content .comment button:hover{
+    opacity: 50%;
+}
+.comment-area{
+    margin-top: 50px;
+}
+.comment-area textarea{
+    width: 100%;
+    min-height: 100px;
+    padding: 10px;
+    margin-block: 10px;
+    background-color: white;
+    color: #151D26;
+}
+.comment-area input{
+    float: right;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #8b97d4;
+    color: #151D26;
+    font-weight: bold;
+}
+/*<----------- Profile ------------>*/
+.profile-description{
+    padding: 10px;
+    background-color: #313859;
+    padding-bottom: 15px;
+}
+.profileEdit{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-green);
+    color: var(--main-blue);
+    height: 80px;
+    width: 80px;
+    border-radius: 20px;
+}
+.profileEdit:hover{
+    background-color: #ffffff;
+}
+
+.profileEdit:active{
+    color: #ce2323;
+}
+
+.profile-description p{
+    background-color: #313859;
+}
+.profile-title{
+    background-color: #313859;
+    font-weight: bold;
+    font-size: 20px;
+}
+.profile-username{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+.profile-username img{
+    width: 100px;
+    height: 100px;
+}
+.profile-username button{
+    margin-left: auto;
+    background-color: #313859;
+}
+.profile-stats{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+.profile-stats span{
+    font-weight: bold;
+}
+.profile-stats > div{
+    margin: 10px;
+}
+.profile-image img{
+    margin-right: 10px;
+}
+
+
+
 /* Media Queries */
 
 @media only screen and (max-width: 1275px) {
-    #HomeBody{
-    }
-
     .iconBox a{
         height: 2rem;
         width: 2rem;
@@ -733,10 +1128,6 @@ footer{
 @media only screen and (max-width: 1024px ){
     #HomeBody{
         font-size:16px;
-    }
-
-    main{
-        height: 406px;
     }
 
     .homeLogo{
@@ -796,13 +1187,19 @@ footer{
 
 @media only screen and (max-width: 768px ) {
     main{
-        height: 466px;
+        height: 76.3vh;
     }
 
-}
-
-@media only screen and (max-width: 1200px) {
-
+@media only screen and (max-width: 425px) {
+    .carouselTop{
+        height: 375px;
+        width: 295px;
+    }
+    
+    .CCC{
+        height:350px;
+        width:200px;    
+    }
 }
 
 @media only screen and (max-width: 1200px) {

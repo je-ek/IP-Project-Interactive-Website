@@ -27,7 +27,6 @@ const mslidesWidth = mslides[0].getBoundingClientRect().width;
 document.addEventListener('DOMContentLoaded', function(e) {
     document.querySelector(".sign-out").addEventListener("click", function(e){
         e.preventDefault();
-        console.log("sign me out cheif");
         function redirect(){
             window.location.assign("Loginpage.html");
         }
@@ -35,15 +34,29 @@ document.addEventListener('DOMContentLoaded', function(e) {
     });
     document.querySelector(".homeLogo").addEventListener("click",function(e){
         e.preventDefault();
-        console.log("click");
 
         document.querySelector(".scrollableContainer").scrollTop = 0;
     })
     document.querySelector(".shopbtn").addEventListener("click",function(e){
         e.preventDefault;
-        console.log("Redirecting to shop...");
         function shopredirect(){
             window.location.assign("Shoppage.html");
+        }
+        setTimeout(shopredirect, 1000);
+    })
+
+    document.querySelector(".forumbtn").addEventListener("click",function(e){
+        e.preventDefault;
+        function shopredirect(){
+            window.location.assign("Forumpage.html");
+        }
+        setTimeout(shopredirect, 1000);
+    })
+
+    document.querySelector(".profilebtn").addEventListener("click",function(e){
+        e.preventDefault;
+        function shopredirect(){
+            window.location.assign("Profilepage.html");
         }
         setTimeout(shopredirect, 1000);
     })
